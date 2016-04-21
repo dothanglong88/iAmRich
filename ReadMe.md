@@ -1,0 +1,1 @@
+iAmRich written by Long
