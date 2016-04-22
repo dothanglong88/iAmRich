@@ -14,21 +14,50 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ruby.png" translatesAutoresizingMaskIntoConstraints="NO" id="UVs-Fw-BKw">
-                                <rect key="frame" x="234" y="159" width="300" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ruby.png" translatesAutoresizingMaskIntoConstraints="NO" id="UVs-Fw-BKw">
+                                <rect key="frame" x="57" y="218" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="F96-Ua-aDe"/>
+                                    <constraint firstAttribute="width" constant="300" id="Xlp-2l-pYh"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I am Rich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eL-BT-BrV">
-                                <rect key="frame" x="284" y="872" width="201" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eL-BT-BrV">
+                                <rect key="frame" x="107" y="656" width="201" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="201" id="AvB-Ku-vei"/>
+                                    <constraint firstAttribute="height" constant="60" id="OXW-b5-nOG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AvB-Ku-vei"/>
+                                        <exclude reference="OXW-b5-nOG"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="UVs-Fw-BKw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JIb-lW-9Z3"/>
+                            <constraint firstItem="9eL-BT-BrV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gLD-hd-D8s"/>
+                            <constraint firstAttribute="bottom" secondItem="9eL-BT-BrV" secondAttribute="bottom" constant="20" symbolic="YES" id="hpe-sa-7iF"/>
+                            <constraint firstItem="9eL-BT-BrV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ixg-SC-qoL"/>
+                            <constraint firstItem="UVs-Fw-BKw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oNr-RR-9vi"/>
+                            <constraint firstItem="9eL-BT-BrV" firstAttribute="centerX" secondItem="UVs-Fw-BKw" secondAttribute="centerX" id="wt4-wK-BWc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gLD-hd-D8s"/>
+                                <exclude reference="ixg-SC-qoL"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="iamRich" destination="9eL-BT-BrV" id="3YH-ex-Uop"/>
                         <outlet property="ruby" destination="UVs-Fw-BKw" id="10y-Jl-C4c"/>
